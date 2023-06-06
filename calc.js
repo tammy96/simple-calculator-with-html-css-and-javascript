@@ -49,5 +49,3 @@ function deleteNum() {
 }
   
 deleteButton.addEventListener("click", deleteNum);
-  
-

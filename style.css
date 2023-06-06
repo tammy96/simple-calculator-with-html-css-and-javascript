@@ -49,16 +49,6 @@
 
     }
 
-    /* .output .previous-operand {
-        color: rgba(255, 255, 255, .75);
-        font-size: 1.5rem;
-    }
-
-    .output .current-operand {
-        color: rgba(255, 255, 255, .75);
-        font-size: 2.5rem;
-    } */
-
     .calculator-display .input-display {
         color: rgba(255, 255, 255, .75);
         font-size: 1.5rem;
@@ -67,4 +57,35 @@
     .calculator-display .output-display {
         color: rgba(255, 255, 255, .75);
         font-size: 2.5rem;
+    }
+
+    @media(max-width: 768px) {
+       
+        .calculator-grid {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            min-height: 100vh;
+            grid-template-columns: repeat(4, 50px);
+            grid-template-rows: minmax(60px, auto) repeat(5, 50px);
+        }
+
+        .calculator-grid > button {
+            cursor: pointer;
+            font-size: 1rem;
+            border: 2px solid white;
+            outline: none;
+            background-color: rgba(255, 255, 255, .75);
+        }
+    
+
+        .calculator-display .input-display {
+            color: rgba(255, 255, 255, .75);
+            font-size: 0.75rem;
+        }
+
+        .calculator-display .output-display {
+            color: rgba(255, 255, 255, .75);
+            font-size: 1.75rem;
+        }
     }
